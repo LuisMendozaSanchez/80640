@@ -15,13 +15,17 @@
   </head>
   <body>
     <h1>formulario</h1>
+    <!--Se hace uso de los métodos GET y POST para envíar información del formulario-->
+    <!--Action establece quien va a procesar la petición de datos--> 
     <form action="javascript.html" method="POST">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12"><label for="nom" class="">Nombre:</label>   <input id="nom" name="nom" type="text" class="form-control" placeholder="Escribe tu nombre"></div>
           <div class="col-6"><label for="dir" class="">Dirección:</label> <input id="dir" name="dir" type="text" class="form-control"></div>
           <div class="col-6"><label for="tel" class="">Teléfono1:</label> <input id="tel" name="tel" type="password" class="form-control"></div>
+          <!--El uso del input de tipo submit realiza el envío de los datos del formulario a donde apunte el action-->
           <input type="submit" value="Enviar" />
+          <!--Este botón solamente realiza el cambio de página pero no tiene que ver con los datos que se envían-->
           <a href="javascript.html" class="btn btn-danger">enviar</a>
         </div>
       </div>
